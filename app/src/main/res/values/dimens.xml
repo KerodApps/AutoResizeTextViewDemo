@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="parent_padding">16dp</dimen>
+    <dimen name="default_text_view_padding">16dp</dimen>
+    <dimen name="text_view_height">96dp</dimen>
+</resources>

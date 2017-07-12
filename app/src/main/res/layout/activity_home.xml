@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/parent_padding">
+
+
+        <EditText
+            android:id="@+id/txte_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type here to see the how the TextViews resize"
+            android:minLines="2" />
+
+        <!---->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_text_view_padding"
+            android:text="Default" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_view_height"
+            android:background="@color/colorLightGrey"
+            app:autoSizeTextType="uniform" />
+        <!---->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_text_view_padding"
+            android:text="Granularity" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtv_granular"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_view_height"
+            android:background="@color/colorLightGrey"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="4sp"
+            app:autoSizeTextType="uniform" />
+        <!---->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_text_view_padding"
+            android:text="Preset" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtv_preset"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_view_height"
+            android:background="@color/colorLightGrey"
+            app:autoSizePresetSizes="@array/discrete_text_sizes"
+            app:autoSizeTextType="uniform" />
+
+
+    </LinearLayout>
+
+</ScrollView>
